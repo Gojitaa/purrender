@@ -1,0 +1,12 @@
+{
+  "name": "renderer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc index.ts --outDir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
