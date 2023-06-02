@@ -2,9 +2,11 @@
   "name": "renderer",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "module": "index.ts",
+  "export": "index.js",
   "scripts": {
-    "build": "tsc index.ts --outDir dist"
+
   },
   "keywords": [],
   "author": "",
