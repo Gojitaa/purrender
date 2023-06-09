@@ -1,14 +1,12 @@
 /* @refresh reload */
 import { render } from 'solid-js/web';
-import renderer from 'renderer';
-
-renderer()
-
+import { render as purrender } from 'renderer';
 
 import './index.css';
 import App from './App';
 
 const root = document.getElementById('root');
+const testRoot = document.getElementById('test-root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   throw new Error(
@@ -17,3 +15,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => <App />, root!);
+purrender(() => <App /> as any, testRoot!);
